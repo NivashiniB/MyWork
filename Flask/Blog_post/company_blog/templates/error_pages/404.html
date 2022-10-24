@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="jumbotron">
+        <h1>Sorry! You got into wrong page.</h1>
+        <p>This page doesn't exist. Please verify the URL.</p>
+        <div>
+            <a href="{{url_for('core.index')}}">Click here to go to home page...</a>
+        </div>
+        
+    </div>
+
+{% endblock %}
+

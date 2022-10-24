@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="jumbotron">
+        <h1>Delete a user</h1>
+        <p>Please enter the ID of the user to delete</p>
+        <form method="post">
+            {{form.hidden_tag()}}
+            {{form.id.label}} {{form.id()}}
+            {{form.submit()}}
+        </form>
+    </div>
+
+{% endblock %}
+

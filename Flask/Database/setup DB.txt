@@ -1,0 +1,4 @@
+set FLASK_APP=basic.py
+flask db init
+flask db migrate (or) flask db migrate -m "<message>"(recommended)
+flask db upgrade
